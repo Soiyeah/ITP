@@ -21,7 +21,7 @@ public class gui extends javax.swing.JFrame {
         initComponents();
     }
 
-    
+    /* soiiii-------------------------------*/
     
     
     JLabel lab1 = new JLabel("User Name");
