@@ -22,7 +22,7 @@ public class gui2 extends javax.swing.JFrame {
     }
 
     
-    
+    /*------------------ballaa-------------------------*/
     
     JLabel lab1 = new JLabel("User Name");
   
@@ -41,6 +41,7 @@ public class gui2 extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jPanel7 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -203,6 +204,10 @@ public class gui2 extends javax.swing.JFrame {
         main_panel.add(jPanel7);
         jPanel7.setBounds(450, 180, 340, 160);
 
+        jLabel1.setText("jLabel1");
+        main_panel.add(jLabel1);
+        jLabel1.setBounds(510, 390, 34, 14);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -286,6 +291,7 @@ public class gui2 extends javax.swing.JFrame {
     private javax.swing.JLabel amount;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
