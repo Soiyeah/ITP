@@ -46,13 +46,17 @@ public class gui2 extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
-        amount = new javax.swing.JLabel();
-        amount1 = new javax.swing.JLabel();
-        amount2 = new javax.swing.JLabel();
+        msg_venue = new javax.swing.JLabel();
+        amount3 = new javax.swing.JLabel();
+        msg_title = new javax.swing.JLabel();
+        msg_description = new javax.swing.JLabel();
+        msg_datetime = new javax.swing.JLabel();
         side_bar = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         notf1 = new javax.swing.JPanel();
         notf1_name = new javax.swing.JLabel();
+        amount2 = new javax.swing.JLabel();
+        amount1 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
@@ -233,42 +237,41 @@ public class gui2 extends javax.swing.JFrame {
         jPanel4.setBounds(0, 50, 810, 100);
 
         jPanel5.setBackground(new java.awt.Color(59, 62, 67));
+        jPanel5.setLayout(null);
 
-        amount.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        amount.setForeground(new java.awt.Color(255, 255, 255));
-        amount.setText("Eric Reffortson");
+        msg_venue.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        msg_venue.setForeground(new java.awt.Color(204, 204, 204));
+        msg_venue.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        msg_venue.setText("Hall 2689");
+        jPanel5.add(msg_venue);
+        msg_venue.setBounds(40, 70, 190, 16);
 
-        amount1.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        amount1.setForeground(new java.awt.Color(255, 255, 255));
-        amount1.setText("0770053513");
+        amount3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        amount3.setForeground(new java.awt.Color(51, 51, 51));
+        amount3.setText("M");
+        jPanel5.add(amount3);
+        amount3.setBounds(5, 3, 11, 16);
 
-        amount2.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        amount2.setForeground(new java.awt.Color(255, 255, 255));
-        amount2.setText("Fri May 3rd");
+        msg_title.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        msg_title.setForeground(new java.awt.Color(153, 153, 153));
+        msg_title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        msg_title.setText("Meeting");
+        jPanel5.add(msg_title);
+        msg_title.setBounds(40, 8, 190, 18);
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(85, 85, 85)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(amount2)
-                    .addComponent(amount1)
-                    .addComponent(amount))
-                .addContainerGap(108, Short.MAX_VALUE))
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(amount)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(amount2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(amount1)
-                .addContainerGap(21, Short.MAX_VALUE))
-        );
+        msg_description.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        msg_description.setForeground(new java.awt.Color(204, 204, 204));
+        msg_description.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        msg_description.setText("Staff meeting scheduled ");
+        jPanel5.add(msg_description);
+        msg_description.setBounds(40, 30, 190, 16);
+
+        msg_datetime.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        msg_datetime.setForeground(new java.awt.Color(204, 204, 204));
+        msg_datetime.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        msg_datetime.setText("2.45 pm : 12.08.16");
+        jPanel5.add(msg_datetime);
+        msg_datetime.setBounds(40, 50, 190, 16);
 
         main_panel.add(jPanel5);
         jPanel5.setBounds(810, 50, 270, 100);
@@ -288,9 +291,19 @@ public class gui2 extends javax.swing.JFrame {
             }
         });
 
-        notf1.setBackground(new java.awt.Color(88, 195, 229));
+        notf1.setBackground(new java.awt.Color(31, 156, 162));
 
-        notf1_name.setText("Name");
+        notf1_name.setFont(new java.awt.Font("Verdana", 0, 10)); // NOI18N
+        notf1_name.setForeground(new java.awt.Color(255, 255, 255));
+        notf1_name.setText("Eric Reffortson");
+
+        amount2.setFont(new java.awt.Font("Verdana", 0, 10)); // NOI18N
+        amount2.setForeground(new java.awt.Color(255, 255, 255));
+        amount2.setText("Fri May 3rd");
+
+        amount1.setFont(new java.awt.Font("Verdana", 0, 10)); // NOI18N
+        amount1.setForeground(new java.awt.Color(255, 255, 255));
+        amount1.setText("0770053513");
 
         javax.swing.GroupLayout notf1Layout = new javax.swing.GroupLayout(notf1);
         notf1.setLayout(notf1Layout);
@@ -298,7 +311,10 @@ public class gui2 extends javax.swing.JFrame {
             notf1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(notf1Layout.createSequentialGroup()
                 .addGap(76, 76, 76)
-                .addComponent(notf1_name, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(notf1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(amount2)
+                    .addComponent(amount1)
+                    .addComponent(notf1_name, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         notf1Layout.setVerticalGroup(
@@ -306,7 +322,11 @@ public class gui2 extends javax.swing.JFrame {
             .addGroup(notf1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(notf1_name)
-                .addContainerGap(49, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(amount2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(amount1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout side_barLayout = new javax.swing.GroupLayout(side_bar);
@@ -324,7 +344,7 @@ public class gui2 extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, side_barLayout.createSequentialGroup()
                 .addGap(40, 40, 40)
                 .addComponent(notf1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 281, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 279, Short.MAX_VALUE)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32))
         );
@@ -349,25 +369,11 @@ public class gui2 extends javax.swing.JFrame {
         jPanel8.setBounds(-10, 610, 1090, 30);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(null);
 
         jTextField1.setOpaque(false);
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(609, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(406, Short.MAX_VALUE))
-        );
+        jPanel2.add(jTextField1);
+        jTextField1.setBounds(151, 142, 168, 28);
 
         main_panel.add(jPanel2);
         jPanel2.setBounds(0, 150, 810, 460);
@@ -475,9 +481,9 @@ public class gui2 extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel amount;
     private javax.swing.JLabel amount1;
     private javax.swing.JLabel amount2;
+    private javax.swing.JLabel amount3;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
@@ -497,6 +503,10 @@ public class gui2 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel9;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JPanel main_panel;
+    private javax.swing.JLabel msg_datetime;
+    private javax.swing.JLabel msg_description;
+    private javax.swing.JLabel msg_title;
+    private javax.swing.JLabel msg_venue;
     private javax.swing.JPanel notf1;
     private javax.swing.JLabel notf1_name;
     private javax.swing.JPanel side_bar;
