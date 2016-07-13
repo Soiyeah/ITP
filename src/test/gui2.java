@@ -39,13 +39,11 @@ public class gui2 extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        pnl_menu1 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
-        pnl_menu2 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
-        pnl_menu3 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         msg_venue = new javax.swing.JLabel();
         amount3 = new javax.swing.JLabel();
@@ -61,7 +59,9 @@ public class gui2 extends javax.swing.JFrame {
         jPanel8 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jLabel14 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -114,6 +114,7 @@ public class gui2 extends javax.swing.JFrame {
         jLabel6.setForeground(new java.awt.Color(153, 153, 153));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("C");
+        jLabel6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         top_panel.add(jLabel6);
         jLabel6.setBounds(530, 20, 30, 22);
 
@@ -138,6 +139,7 @@ public class gui2 extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(153, 153, 153));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("X");
+        jLabel7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         top_panel.add(jLabel7);
         jLabel7.setBounds(450, 20, 30, 22);
 
@@ -145,6 +147,7 @@ public class gui2 extends javax.swing.JFrame {
         jLabel8.setForeground(new java.awt.Color(153, 153, 153));
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("O");
+        jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         top_panel.add(jLabel8);
         jLabel8.setBounds(490, 20, 30, 22);
 
@@ -152,23 +155,11 @@ public class gui2 extends javax.swing.JFrame {
         top_panel.setBounds(0, 0, 1080, 50);
 
         jPanel4.setBackground(new java.awt.Color(67, 70, 75));
-        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        pnl_menu1.setBackground(new java.awt.Color(67, 70, 75));
-        pnl_menu1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                pnl_menu1MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                pnl_menu1MouseExited(evt);
-            }
-        });
-        pnl_menu1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel10.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Bridal Packages");
-        pnl_menu1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 73, -1, -1));
+        jLabel10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jPanel11.setBackground(new java.awt.Color(12, 173, 183));
         jPanel11.setPreferredSize(new java.awt.Dimension(190, 3));
@@ -177,54 +168,60 @@ public class gui2 extends javax.swing.JFrame {
         jPanel11.setLayout(jPanel11Layout);
         jPanel11Layout.setHorizontalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 170, Short.MAX_VALUE)
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 3, Short.MAX_VALUE)
         );
 
-        pnl_menu1.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 96, -1, -1));
-
-        jPanel4.add(pnl_menu1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        pnl_menu2.setBackground(new java.awt.Color(67, 70, 75));
-        pnl_menu2.setPreferredSize(new java.awt.Dimension(190, 98));
-        pnl_menu2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                pnl_menu2MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                pnl_menu2MouseExited(evt);
-            }
-        });
-        pnl_menu2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
         jLabel11.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Bridal Packages");
-        pnl_menu2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 73, -1, -1));
-
-        pnl_menu3.setBackground(new java.awt.Color(67, 70, 75));
-        pnl_menu3.setPreferredSize(new java.awt.Dimension(190, 98));
-        pnl_menu3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                pnl_menu3MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                pnl_menu3MouseExited(evt);
-            }
-        });
-        pnl_menu3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jLabel11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jLabel12.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Bridal Packages");
-        pnl_menu3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 73, -1, -1));
+        jLabel12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        pnl_menu2.add(pnl_menu3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 190, 98));
+        jLabel13.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setText("Bridal Packages");
+        jLabel13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        jPanel4.add(pnl_menu2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 190, 98));
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(jLabel11)
+                .addGap(111, 111, 111)
+                .addComponent(jLabel12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 119, Short.MAX_VALUE)
+                .addComponent(jLabel10)
+                .addGap(106, 106, 106)
+                .addComponent(jLabel13)
+                .addGap(38, 38, 38))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel11)
+                        .addComponent(jLabel12))
+                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel10)
+                        .addComponent(jLabel13)))
+                .addGap(11, 11, 11)
+                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         main_panel.add(jPanel4);
         jPanel4.setBounds(0, 50, 810, 100);
@@ -368,13 +365,25 @@ public class gui2 extends javax.swing.JFrame {
         jTextField1.setOpaque(false);
         jTextField1.setPreferredSize(new java.awt.Dimension(5, 20));
         jPanel2.add(jTextField1);
-        jTextField1.setBounds(120, 90, 168, 23);
+        jTextField1.setBounds(270, 170, 168, 23);
 
-        jLabel9.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(33, 33, 33));
-        jLabel9.setText("Register Customer");
-        jPanel2.add(jLabel9);
-        jLabel9.setBounds(300, 90, 140, 20);
+        jButton3.setText("Update");
+        jPanel2.add(jButton3);
+        jButton3.setBounds(430, 230, 70, 25);
+
+        jButton4.setBackground(new java.awt.Color(24, 185, 175));
+        jButton4.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
+        jButton4.setText("Search");
+        jButton4.setBorderPainted(false);
+        jPanel2.add(jButton4);
+        jButton4.setBounds(437, 170, 80, 23);
+
+        jLabel14.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(33, 33, 33));
+        jLabel14.setText("Register Customer");
+        jPanel2.add(jLabel14);
+        jLabel14.setBounds(300, 230, 120, 20);
 
         main_panel.add(jPanel2);
         jPanel2.setBounds(0, 150, 810, 460);
@@ -446,32 +455,6 @@ public class gui2 extends javax.swing.JFrame {
         
     }//GEN-LAST:event_formWindowOpened
 
-    private void pnl_menu1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl_menu1MouseEntered
-        
-        pnl_menu1.setBackground(new java.awt.Color(59,62,67));
-        
-    }//GEN-LAST:event_pnl_menu1MouseEntered
-
-    private void pnl_menu1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl_menu1MouseExited
-        pnl_menu1.setBackground(new java.awt.Color(67,70,75));
-    }//GEN-LAST:event_pnl_menu1MouseExited
-
-    private void pnl_menu2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl_menu2MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_pnl_menu2MouseEntered
-
-    private void pnl_menu2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl_menu2MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_pnl_menu2MouseExited
-
-    private void pnl_menu3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl_menu3MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_pnl_menu3MouseEntered
-
-    private void pnl_menu3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnl_menu3MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_pnl_menu3MouseExited
-
     /**
      * @param args the command line arguments
      */
@@ -483,7 +466,7 @@ public class gui2 extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -513,14 +496,17 @@ public class gui2 extends javax.swing.JFrame {
     private javax.swing.JLabel amount3;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel2;
@@ -535,9 +521,6 @@ public class gui2 extends javax.swing.JFrame {
     private javax.swing.JLabel msg_venue;
     private javax.swing.JPanel notf1;
     private javax.swing.JLabel notf1_name;
-    private javax.swing.JPanel pnl_menu1;
-    private javax.swing.JPanel pnl_menu2;
-    private javax.swing.JPanel pnl_menu3;
     private javax.swing.JPanel side_bar;
     private javax.swing.JPanel top_panel;
     // End of variables declaration//GEN-END:variables
