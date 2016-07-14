@@ -74,6 +74,9 @@ public class AddAppointment extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -390,7 +393,7 @@ public class AddAppointment extends javax.swing.JFrame {
         jButton4.setActionCommand("Facial");
         jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jButton4);
-        jButton4.setBounds(660, 80, 120, 40);
+        jButton4.setBounds(660, 20, 120, 40);
 
         jLabel14.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(33, 33, 33));
@@ -416,11 +419,11 @@ public class AddAppointment extends javax.swing.JFrame {
         jPanel2.add(jLabel15);
         jLabel15.setBounds(60, 120, 110, 20);
 
-        jLabel16.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Nirmala UI", 0, 20)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(33, 33, 33));
-        jLabel16.setText("Special Note");
+        jLabel16.setText("Rs. 2600.00");
         jPanel2.add(jLabel16);
-        jLabel16.setBounds(60, 270, 110, 20);
+        jLabel16.setBounds(670, 430, 110, 20);
 
         jTextField4.setMinimumSize(new java.awt.Dimension(5, 20));
         jTextField4.setOpaque(false);
@@ -431,7 +434,7 @@ public class AddAppointment extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTextPane1);
 
         jPanel2.add(jScrollPane1);
-        jScrollPane1.setBounds(180, 270, 170, 30);
+        jScrollPane1.setBounds(180, 240, 170, 30);
 
         jLabel17.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(33, 33, 33));
@@ -474,7 +477,7 @@ public class AddAppointment extends javax.swing.JFrame {
         );
 
         jPanel2.add(jPanel1);
-        jPanel1.setBounds(430, 120, 350, 219);
+        jPanel1.setBounds(430, 60, 350, 219);
 
         jButton5.setBackground(new java.awt.Color(12, 173, 183));
         jButton5.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
@@ -500,7 +503,7 @@ public class AddAppointment extends javax.swing.JFrame {
         jButton7.setActionCommand("Facial");
         jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jButton7);
-        jButton7.setBounds(550, 80, 110, 40);
+        jButton7.setBounds(550, 20, 110, 40);
 
         jButton8.setBackground(new java.awt.Color(12, 173, 183));
         jButton8.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
@@ -508,7 +511,25 @@ public class AddAppointment extends javax.swing.JFrame {
         jButton8.setText("Hair");
         jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jButton8);
-        jButton8.setBounds(430, 80, 120, 40);
+        jButton8.setBounds(430, 20, 120, 40);
+
+        jLabel18.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(33, 33, 33));
+        jLabel18.setText("Special Note");
+        jPanel2.add(jLabel18);
+        jLabel18.setBounds(60, 240, 110, 20);
+
+        jLabel19.setFont(new java.awt.Font("Nirmala UI", 0, 18)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(33, 33, 33));
+        jLabel19.setText("Total :");
+        jPanel2.add(jLabel19);
+        jLabel19.setBounds(620, 430, 50, 20);
+
+        jLabel20.setFont(new java.awt.Font("Nirmala UI", 0, 18)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(33, 33, 33));
+        jLabel20.setText("3 Items selected");
+        jPanel2.add(jLabel20);
+        jLabel20.setBounds(630, 390, 140, 20);
 
         main_panel.add(jPanel2);
         jPanel2.setBounds(0, 150, 860, 510);
@@ -636,7 +657,10 @@ public class AddAppointment extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
