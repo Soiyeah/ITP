@@ -201,9 +201,9 @@ public class gui2 extends javax.swing.JFrame {
                 .addComponent(jLabel11)
                 .addGap(111, 111, 111)
                 .addComponent(jLabel12)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 119, Short.MAX_VALUE)
+                .addGap(130, 130, 130)
                 .addComponent(jLabel10)
-                .addGap(106, 106, 106)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 145, Short.MAX_VALUE)
                 .addComponent(jLabel13)
                 .addGap(38, 38, 38))
         );
@@ -214,16 +214,15 @@ public class gui2 extends javax.swing.JFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel11)
-                        .addComponent(jLabel12))
-                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel10)
-                        .addComponent(jLabel13)))
+                        .addComponent(jLabel12)
+                        .addComponent(jLabel10))
+                    .addComponent(jLabel13))
                 .addGap(11, 11, 11)
                 .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         main_panel.add(jPanel4);
-        jPanel4.setBounds(0, 50, 810, 100);
+        jPanel4.setBounds(0, 50, 860, 100);
 
         jPanel5.setBackground(new java.awt.Color(59, 62, 67));
         jPanel5.setLayout(null);
@@ -233,7 +232,7 @@ public class gui2 extends javax.swing.JFrame {
         msg_venue.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         msg_venue.setText("Hall 2689");
         jPanel5.add(msg_venue);
-        msg_venue.setBounds(40, 70, 190, 16);
+        msg_venue.setBounds(20, 70, 190, 16);
 
         amount3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         amount3.setForeground(new java.awt.Color(51, 51, 51));
@@ -246,24 +245,24 @@ public class gui2 extends javax.swing.JFrame {
         msg_title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         msg_title.setText("Meeting");
         jPanel5.add(msg_title);
-        msg_title.setBounds(40, 8, 190, 18);
+        msg_title.setBounds(20, 10, 190, 18);
 
         msg_description.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         msg_description.setForeground(new java.awt.Color(204, 204, 204));
         msg_description.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         msg_description.setText("Staff meeting scheduled ");
         jPanel5.add(msg_description);
-        msg_description.setBounds(40, 30, 190, 16);
+        msg_description.setBounds(20, 30, 190, 16);
 
         msg_datetime.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         msg_datetime.setForeground(new java.awt.Color(204, 204, 204));
         msg_datetime.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         msg_datetime.setText("2.45 pm : 12.08.16");
         jPanel5.add(msg_datetime);
-        msg_datetime.setBounds(40, 50, 190, 16);
+        msg_datetime.setBounds(20, 50, 190, 16);
 
         main_panel.add(jPanel5);
-        jPanel5.setBounds(810, 50, 270, 100);
+        jPanel5.setBounds(860, 50, 220, 100);
 
         side_bar.setBackground(new java.awt.Color(12, 173, 183));
 
@@ -304,7 +303,7 @@ public class gui2 extends javax.swing.JFrame {
                     .addComponent(amount2)
                     .addComponent(amount1)
                     .addComponent(notf1_name, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(48, Short.MAX_VALUE))
         );
         notf1Layout.setVerticalGroup(
             notf1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -322,24 +321,24 @@ public class gui2 extends javax.swing.JFrame {
         side_bar.setLayout(side_barLayout);
         side_barLayout.setHorizontalGroup(
             side_barLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(side_barLayout.createSequentialGroup()
-                .addGap(81, 81, 81)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(62, Short.MAX_VALUE))
             .addComponent(notf1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(side_barLayout.createSequentialGroup()
+                .addGap(54, 54, 54)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         side_barLayout.setVerticalGroup(
             side_barLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, side_barLayout.createSequentialGroup()
                 .addGap(40, 40, 40)
                 .addComponent(notf1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 276, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 317, Short.MAX_VALUE)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32))
+                .addContainerGap())
         );
 
         main_panel.add(side_bar);
-        side_bar.setBounds(810, 150, 270, 460);
+        side_bar.setBounds(860, 150, 220, 480);
 
         jPanel8.setBackground(new java.awt.Color(52, 53, 57));
 
@@ -355,7 +354,7 @@ public class gui2 extends javax.swing.JFrame {
         );
 
         main_panel.add(jPanel8);
-        jPanel8.setBounds(-10, 610, 1090, 30);
+        jPanel8.setBounds(-10, 630, 1090, 30);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(null);
@@ -379,7 +378,7 @@ public class gui2 extends javax.swing.JFrame {
         jButton4.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Search");
-        jButton4.setBorderPainted(false);
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jButton4);
         jButton4.setBounds(437, 170, 80, 23);
 
@@ -390,7 +389,7 @@ public class gui2 extends javax.swing.JFrame {
         jLabel14.setBounds(300, 230, 120, 20);
 
         main_panel.add(jPanel2);
-        jPanel2.setBounds(0, 150, 810, 460);
+        jPanel2.setBounds(0, 150, 860, 480);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -400,11 +399,11 @@ public class gui2 extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(main_panel, javax.swing.GroupLayout.DEFAULT_SIZE, 639, Short.MAX_VALUE)
+            .addComponent(main_panel, javax.swing.GroupLayout.DEFAULT_SIZE, 662, Short.MAX_VALUE)
         );
 
-        java.awt.Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
-        setBounds((screenSize.width-1075)/2, (screenSize.height-639)/2, 1075, 639);
+        setSize(new java.awt.Dimension(1075, 662));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
