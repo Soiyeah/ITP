@@ -4,8 +4,7 @@
  */
 package test;
 
-import java.awt.Color;
-import java.awt.Component;
+import Nim.AddEmployee;
 import javax.swing.JLabel;
 
 /**
@@ -83,7 +82,7 @@ public class gui2 extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Welcome, User");
         top_panel.add(jLabel2);
-        jLabel2.setBounds(20, 10, 114, 25);
+        jLabel2.setBounds(20, 10, 122, 24);
 
         jButton2.setBackground(new java.awt.Color(12, 173, 183));
         jButton2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 11)); // NOI18N
@@ -116,7 +115,7 @@ public class gui2 extends javax.swing.JFrame {
         jLabel6.setText("C");
         jLabel6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         top_panel.add(jLabel6);
-        jLabel6.setBounds(530, 20, 30, 22);
+        jLabel6.setBounds(530, 20, 30, 24);
 
         jPanel10.setBackground(new java.awt.Color(12, 173, 183));
         jPanel10.setPreferredSize(new java.awt.Dimension(190, 3));
@@ -141,7 +140,7 @@ public class gui2 extends javax.swing.JFrame {
         jLabel7.setText("X");
         jLabel7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         top_panel.add(jLabel7);
-        jLabel7.setBounds(450, 20, 30, 22);
+        jLabel7.setBounds(450, 20, 30, 24);
 
         jLabel8.setFont(new java.awt.Font("SFNS Display", 0, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(153, 153, 153));
@@ -149,7 +148,7 @@ public class gui2 extends javax.swing.JFrame {
         jLabel8.setText("O");
         jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         top_panel.add(jLabel8);
-        jLabel8.setBounds(490, 20, 30, 22);
+        jLabel8.setBounds(490, 20, 30, 24);
 
         main_panel.add(top_panel);
         top_panel.setBounds(0, 0, 1080, 50);
@@ -368,6 +367,11 @@ public class gui2 extends javax.swing.JFrame {
         jTextField1.setBounds(270, 170, 168, 23);
 
         jButton3.setText("Update");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton3);
         jButton3.setBounds(430, 230, 70, 25);
 
@@ -399,8 +403,8 @@ public class gui2 extends javax.swing.JFrame {
             .addComponent(main_panel, javax.swing.GroupLayout.DEFAULT_SIZE, 639, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(1075, 639));
-        setLocationRelativeTo(null);
+        java.awt.Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
+        setBounds((screenSize.width-1075)/2, (screenSize.height-639)/2, 1075, 639);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -454,6 +458,13 @@ public class gui2 extends javax.swing.JFrame {
         notf1.setVisible(false);
         
     }//GEN-LAST:event_formWindowOpened
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        
+        AddEmployee a1 = new AddEmployee();
+        a1.setVisible(true);
+        
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
