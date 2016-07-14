@@ -4,7 +4,6 @@
  */
 package test;
 
-import Nim.AddEmployee;
 import javax.swing.JLabel;
 
 /**
@@ -332,13 +331,13 @@ public class gui2 extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, side_barLayout.createSequentialGroup()
                 .addGap(40, 40, 40)
                 .addComponent(notf1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 317, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 347, Short.MAX_VALUE)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         main_panel.add(side_bar);
-        side_bar.setBounds(860, 150, 220, 480);
+        side_bar.setBounds(860, 150, 220, 510);
 
         jPanel8.setBackground(new java.awt.Color(52, 53, 57));
 
@@ -354,7 +353,7 @@ public class gui2 extends javax.swing.JFrame {
         );
 
         main_panel.add(jPanel8);
-        jPanel8.setBounds(-10, 630, 1090, 30);
+        jPanel8.setBounds(-10, 660, 1090, 30);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(null);
@@ -389,20 +388,20 @@ public class gui2 extends javax.swing.JFrame {
         jLabel14.setBounds(300, 230, 120, 20);
 
         main_panel.add(jPanel2);
-        jPanel2.setBounds(0, 150, 860, 480);
+        jPanel2.setBounds(0, 150, 860, 510);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(main_panel, javax.swing.GroupLayout.DEFAULT_SIZE, 1075, Short.MAX_VALUE)
+            .addComponent(main_panel, javax.swing.GroupLayout.DEFAULT_SIZE, 1080, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(main_panel, javax.swing.GroupLayout.DEFAULT_SIZE, 662, Short.MAX_VALUE)
+            .addComponent(main_panel, javax.swing.GroupLayout.DEFAULT_SIZE, 688, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(1075, 662));
+        setSize(new java.awt.Dimension(1080, 688));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -460,9 +459,7 @@ public class gui2 extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         
-        AddEmployee a1 = new AddEmployee();
-        a1.setVisible(true);
-        
+
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
