@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Sanji;
+package Devni;
 
 import Soi.gui2;
 import javax.swing.JLabel;

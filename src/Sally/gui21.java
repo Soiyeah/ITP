@@ -2,20 +2,21 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package test;
+package Sally;
 
+import Soi.gui2;
 import javax.swing.JLabel;
 
 /**
  *
  * @author it15-102560
  */
-public class gui2 extends javax.swing.JFrame {
+public class gui21 extends javax.swing.JFrame {
 
     /**
      * Creates new form gui
      */
-    public gui2() {
+    public gui21() {
         initComponents();
     }
 
