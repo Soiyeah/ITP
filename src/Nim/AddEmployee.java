@@ -65,6 +65,7 @@ public class AddEmployee extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -424,6 +425,10 @@ public class AddEmployee extends javax.swing.JFrame {
         jPanel2.add(jButton6);
         jButton6.setBounds(540, 110, 73, 23);
 
+        jButton7.setText("jButton7");
+        jPanel2.add(jButton7);
+        jButton7.setBounds(620, 120, 73, 23);
+
         main_panel.add(jPanel2);
         jPanel2.setBounds(0, 150, 810, 460);
 
@@ -547,6 +552,7 @@ public class AddEmployee extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
