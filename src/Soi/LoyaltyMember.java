@@ -10,17 +10,17 @@ import javax.swing.JLabel;
  *
  * @author it15-102560
  */
-public class AddAppointment extends javax.swing.JFrame {
+public class LoyaltyMember extends javax.swing.JFrame {
 
     /**
      * Creates new form gui
      */
-    public AddAppointment() {
+    public LoyaltyMember() {
         initComponents();
     }
 
     
-    /*------------------ballaa-------------------------*/
+  
     
     JLabel lab1 = new JLabel("User Name");
   
@@ -37,11 +37,11 @@ public class AddAppointment extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        lbl_AddMem = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         msg_venue = new javax.swing.JLabel();
         amount3 = new javax.swing.JLabel();
@@ -57,7 +57,6 @@ public class AddAppointment extends javax.swing.JFrame {
         jPanel8 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
-        jButton4 = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
@@ -67,16 +66,18 @@ public class AddAppointment extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextPane1 = new javax.swing.JTextPane();
         jLabel17 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jTextField5 = new javax.swing.JTextField();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
+        jTextField6 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -171,6 +172,16 @@ public class AddAppointment extends javax.swing.JFrame {
 
         jPanel4.setBackground(new java.awt.Color(67, 70, 75));
 
+        jLabel10.setFont(new java.awt.Font("Verdana", 0, 13)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("Check Availability");
+        jLabel10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel10MouseClicked(evt);
+            }
+        });
+
         jPanel11.setBackground(new java.awt.Color(12, 173, 183));
         jPanel11.setPreferredSize(new java.awt.Dimension(190, 3));
 
@@ -189,44 +200,40 @@ public class AddAppointment extends javax.swing.JFrame {
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Appointment");
         jLabel11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+        });
+
+        jLabel12.setFont(new java.awt.Font("Verdana", 0, 13)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("Add Loyalty Customer");
+        jLabel12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jLabel13.setFont(new java.awt.Font("Verdana", 0, 13)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Packages");
         jLabel13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        lbl_AddMem.setFont(new java.awt.Font("Verdana", 0, 13)); // NOI18N
-        lbl_AddMem.setForeground(new java.awt.Color(255, 255, 255));
-        lbl_AddMem.setText("Add Loyalty Customer");
-        lbl_AddMem.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        lbl_AddMem.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lbl_AddMemMouseClicked(evt);
-            }
-        });
-
-        jLabel10.setFont(new java.awt.Font("Verdana", 0, 13)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Check Availability");
-        jLabel10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(53, 53, 53)
                 .addComponent(jLabel11)
-                .addGap(115, 115, 115)
-                .addComponent(lbl_AddMem)
-                .addGap(108, 108, 108)
+                .addGap(126, 126, 126)
+                .addComponent(jLabel12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
                 .addComponent(jLabel10)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 119, Short.MAX_VALUE)
+                .addGap(131, 131, 131)
                 .addComponent(jLabel13)
                 .addGap(60, 60, 60))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(248, 248, 248)
+                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -234,15 +241,16 @@ public class AddAppointment extends javax.swing.JFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(70, 70, 70)
-                        .addComponent(jLabel13)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel13)
+                            .addComponent(jLabel10))
                         .addGap(11, 11, 11))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lbl_AddMem, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel11)
+                            .addComponent(jLabel12))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
                 .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -388,22 +396,13 @@ public class AddAppointment extends javax.swing.JFrame {
         jTextField1.setOpaque(false);
         jTextField1.setPreferredSize(new java.awt.Dimension(5, 20));
         jPanel2.add(jTextField1);
-        jTextField1.setBounds(180, 80, 168, 25);
-
-        jButton4.setBackground(new java.awt.Color(12, 173, 183));
-        jButton4.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Dressing");
-        jButton4.setActionCommand("Facial");
-        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(jButton4);
-        jButton4.setBounds(660, 20, 120, 40);
+        jTextField1.setBounds(170, 90, 168, 25);
 
         jLabel14.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(33, 33, 33));
-        jLabel14.setText("Customer Name");
+        jLabel14.setText("Title");
         jPanel2.add(jLabel14);
-        jLabel14.setBounds(60, 80, 110, 20);
+        jLabel14.setBounds(50, 90, 110, 20);
 
         jTextField2.setMinimumSize(new java.awt.Dimension(5, 20));
         jTextField2.setOpaque(false);
@@ -415,13 +414,13 @@ public class AddAppointment extends javax.swing.JFrame {
         jTextField3.setOpaque(false);
         jTextField3.setPreferredSize(new java.awt.Dimension(5, 20));
         jPanel2.add(jTextField3);
-        jTextField3.setBounds(180, 120, 168, 25);
+        jTextField3.setBounds(170, 210, 168, 25);
 
         jLabel15.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(33, 33, 33));
         jLabel15.setText("Phone");
         jPanel2.add(jLabel15);
-        jLabel15.setBounds(60, 120, 110, 20);
+        jLabel15.setBounds(50, 210, 110, 20);
 
         jLabel16.setFont(new java.awt.Font("Nirmala UI", 0, 20)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(33, 33, 33));
@@ -433,55 +432,18 @@ public class AddAppointment extends javax.swing.JFrame {
         jTextField4.setOpaque(false);
         jTextField4.setPreferredSize(new java.awt.Dimension(5, 20));
         jPanel2.add(jTextField4);
-        jTextField4.setBounds(180, 160, 168, 25);
+        jTextField4.setBounds(170, 250, 168, 25);
 
         jScrollPane1.setViewportView(jTextPane1);
 
         jPanel2.add(jScrollPane1);
-        jScrollPane1.setBounds(180, 240, 170, 30);
+        jScrollPane1.setBounds(170, 330, 170, 30);
 
         jLabel17.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(33, 33, 33));
         jLabel17.setText("Address");
         jPanel2.add(jLabel17);
-        jLabel17.setBounds(60, 160, 110, 20);
-
-        jPanel1.setBackground(new java.awt.Color(102, 185, 213));
-
-        jTable1.setAutoCreateRowSorter(true);
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
-            },
-            new String [] {
-                "ID", "Name", "Price"
-            }
-        ));
-        jTable1.setGridColor(new java.awt.Color(204, 204, 204));
-        jTable1.setRowHeight(30);
-        jTable1.setRowMargin(10);
-        jScrollPane2.setViewportView(jTable1);
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 350, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-
-        jPanel2.add(jPanel1);
-        jPanel1.setBounds(430, 60, 350, 219);
+        jLabel17.setBounds(50, 250, 110, 20);
 
         jButton5.setBackground(new java.awt.Color(12, 173, 183));
         jButton5.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
@@ -494,33 +456,16 @@ public class AddAppointment extends javax.swing.JFrame {
         jButton6.setBackground(new java.awt.Color(12, 173, 183));
         jButton6.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("Add Appointment");
+        jButton6.setText("Add Customer");
         jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jButton6);
         jButton6.setBounds(310, 410, 210, 40);
-
-        jButton7.setBackground(new java.awt.Color(12, 173, 183));
-        jButton7.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("Facial");
-        jButton7.setToolTipText("");
-        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(jButton7);
-        jButton7.setBounds(550, 20, 110, 40);
-
-        jButton8.setBackground(new java.awt.Color(12, 173, 183));
-        jButton8.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
-        jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setText("Hair");
-        jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(jButton8);
-        jButton8.setBounds(430, 20, 120, 40);
 
         jLabel18.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(33, 33, 33));
         jLabel18.setText("Special Note");
         jPanel2.add(jLabel18);
-        jLabel18.setBounds(60, 240, 110, 20);
+        jLabel18.setBounds(50, 330, 110, 20);
 
         jLabel19.setFont(new java.awt.Font("Nirmala UI", 0, 18)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(33, 33, 33));
@@ -528,11 +473,53 @@ public class AddAppointment extends javax.swing.JFrame {
         jPanel2.add(jLabel19);
         jLabel19.setBounds(620, 430, 50, 20);
 
-        jLabel20.setFont(new java.awt.Font("Nirmala UI", 0, 18)); // NOI18N
+        jLabel21.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(33, 33, 33));
+        jLabel21.setText("Last Name");
+        jPanel2.add(jLabel21);
+        jLabel21.setBounds(50, 170, 110, 20);
+
+        jTextField5.setMinimumSize(new java.awt.Dimension(5, 20));
+        jTextField5.setOpaque(false);
+        jTextField5.setPreferredSize(new java.awt.Dimension(5, 20));
+        jPanel2.add(jTextField5);
+        jTextField5.setBounds(170, 170, 168, 25);
+
+        jLabel22.setFont(new java.awt.Font("Nirmala UI", 0, 24)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(33, 33, 33));
+        jLabel22.setText("DC65893");
+        jPanel2.add(jLabel22);
+        jLabel22.setBounds(580, 190, 110, 30);
+
+        jLabel23.setFont(new java.awt.Font("Nirmala UI", 0, 18)); // NOI18N
+        jLabel23.setForeground(new java.awt.Color(33, 33, 33));
+        jLabel23.setText("Dr. FirstName LastName");
+        jPanel2.add(jLabel23);
+        jLabel23.setBounds(580, 150, 220, 30);
+
+        jLabel24.setFont(new java.awt.Font("Nirmala UI", 0, 18)); // NOI18N
+        jLabel24.setForeground(new java.awt.Color(33, 33, 33));
+        jLabel24.setText("Loyalty ID :");
+        jPanel2.add(jLabel24);
+        jLabel24.setBounds(460, 190, 100, 30);
+
+        jLabel25.setFont(new java.awt.Font("Nirmala UI", 0, 18)); // NOI18N
+        jLabel25.setForeground(new java.awt.Color(33, 33, 33));
+        jLabel25.setText("Name       :");
+        jPanel2.add(jLabel25);
+        jLabel25.setBounds(460, 150, 100, 30);
+
+        jLabel20.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(33, 33, 33));
-        jLabel20.setText("3 Items selected");
+        jLabel20.setText("First Name");
         jPanel2.add(jLabel20);
-        jLabel20.setBounds(630, 390, 140, 20);
+        jLabel20.setBounds(50, 130, 110, 20);
+
+        jTextField6.setMinimumSize(new java.awt.Dimension(5, 20));
+        jTextField6.setOpaque(false);
+        jTextField6.setPreferredSize(new java.awt.Dimension(5, 20));
+        jPanel2.add(jTextField6);
+        jTextField6.setBounds(170, 130, 168, 25);
 
         main_panel.add(jPanel2);
         jPanel2.setBounds(0, 150, 860, 510);
@@ -604,11 +591,20 @@ public class AddAppointment extends javax.swing.JFrame {
         
     }//GEN-LAST:event_formWindowOpened
 
-    private void lbl_AddMemMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_AddMemMouseClicked
-        LoyaltyMember l = new LoyaltyMember();
-        l.setVisible(true);
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+        
+        AddAppointment a = new AddAppointment();
+        a.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_lbl_AddMemMouseClicked
+        
+    }//GEN-LAST:event_jLabel11MouseClicked
+
+    private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
+        
+        Availability a = new Availability();
+        a.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel10MouseClicked
 
     /**
      * @param args the command line arguments
@@ -627,14 +623,18 @@ public class AddAppointment extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AddAppointment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoyaltyMember.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AddAppointment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoyaltyMember.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AddAppointment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoyaltyMember.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AddAppointment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoyaltyMember.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -643,7 +643,7 @@ public class AddAppointment extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new AddAppointment().setVisible(true);
+                new LoyaltyMember().setVisible(true);
             }
         });
     }
@@ -653,13 +653,11 @@ public class AddAppointment extends javax.swing.JFrame {
     private javax.swing.JLabel amount3;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
@@ -669,10 +667,14 @@ public class AddAppointment extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel2;
@@ -680,14 +682,13 @@ public class AddAppointment extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
     private javax.swing.JTextPane jTextPane1;
-    private javax.swing.JLabel lbl_AddMem;
     private javax.swing.JPanel main_panel;
     private javax.swing.JLabel msg_datetime;
     private javax.swing.JLabel msg_description;

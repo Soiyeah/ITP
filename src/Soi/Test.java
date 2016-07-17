@@ -17,7 +17,7 @@ public class Test {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        gui2 g = new gui2();
+        AddAppointment g = new AddAppointment();
         g.setVisible(true);
         
     }
