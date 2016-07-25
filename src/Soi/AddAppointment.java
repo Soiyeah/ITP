@@ -77,6 +77,8 @@ public class AddAppointment extends javax.swing.JFrame {
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
+        jTextField5 = new javax.swing.JTextField();
+        jLabel21 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -197,7 +199,7 @@ public class AddAppointment extends javax.swing.JFrame {
 
         jLabel13.setFont(new java.awt.Font("Verdana", 0, 13)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("Packages");
+        jLabel13.setText("All Appointments");
         jLabel13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         lbl_AddMem.setFont(new java.awt.Font("Verdana", 0, 13)); // NOI18N
@@ -225,28 +227,24 @@ public class AddAppointment extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(28, 28, 28)
                 .addComponent(jLabel11)
-                .addGap(140, 140, 140)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
+                .addComponent(jLabel13)
+                .addGap(96, 96, 96)
                 .addComponent(lbl_AddMem)
                 .addGap(108, 108, 108)
                 .addComponent(jLabel10)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
-                .addComponent(jLabel13)
-                .addGap(59, 59, 59))
+                .addGap(43, 43, 43))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(75, 75, 75)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(75, 75, 75)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(lbl_AddMem)
-                                .addComponent(jLabel11))
-                            .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.TRAILING)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel13)))
+                    .addComponent(jLabel11)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lbl_AddMem)
+                        .addComponent(jLabel13))
+                    .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -393,7 +391,7 @@ public class AddAppointment extends javax.swing.JFrame {
         jTextField1.setOpaque(false);
         jTextField1.setPreferredSize(new java.awt.Dimension(5, 20));
         jPanel2.add(jTextField1);
-        jTextField1.setBounds(180, 80, 168, 25);
+        jTextField1.setBounds(180, 80, 210, 25);
 
         jButton4.setBackground(new java.awt.Color(12, 173, 183));
         jButton4.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
@@ -406,7 +404,7 @@ public class AddAppointment extends javax.swing.JFrame {
 
         jLabel14.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(33, 33, 33));
-        jLabel14.setText("Customer Name");
+        jLabel14.setText("First Name");
         jPanel2.add(jLabel14);
         jLabel14.setBounds(60, 80, 110, 20);
 
@@ -420,13 +418,13 @@ public class AddAppointment extends javax.swing.JFrame {
         jTextField3.setOpaque(false);
         jTextField3.setPreferredSize(new java.awt.Dimension(5, 20));
         jPanel2.add(jTextField3);
-        jTextField3.setBounds(180, 120, 168, 25);
+        jTextField3.setBounds(180, 160, 210, 25);
 
         jLabel15.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(33, 33, 33));
         jLabel15.setText("Phone");
         jPanel2.add(jLabel15);
-        jLabel15.setBounds(60, 120, 110, 20);
+        jLabel15.setBounds(60, 160, 110, 20);
 
         jLabel16.setFont(new java.awt.Font("Nirmala UI", 0, 20)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(33, 33, 33));
@@ -438,18 +436,18 @@ public class AddAppointment extends javax.swing.JFrame {
         jTextField4.setOpaque(false);
         jTextField4.setPreferredSize(new java.awt.Dimension(5, 20));
         jPanel2.add(jTextField4);
-        jTextField4.setBounds(180, 160, 168, 25);
+        jTextField4.setBounds(180, 200, 210, 25);
 
         jScrollPane1.setViewportView(jTextPane1);
 
         jPanel2.add(jScrollPane1);
-        jScrollPane1.setBounds(180, 240, 170, 30);
+        jScrollPane1.setBounds(180, 240, 210, 30);
 
         jLabel17.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(33, 33, 33));
         jLabel17.setText("Address");
         jPanel2.add(jLabel17);
-        jLabel17.setBounds(60, 160, 110, 20);
+        jLabel17.setBounds(60, 200, 110, 20);
 
         jPanel1.setBackground(new java.awt.Color(102, 185, 213));
 
@@ -538,6 +536,18 @@ public class AddAppointment extends javax.swing.JFrame {
         jLabel20.setText("3 Items selected");
         jPanel2.add(jLabel20);
         jLabel20.setBounds(630, 390, 140, 20);
+
+        jTextField5.setMinimumSize(new java.awt.Dimension(5, 20));
+        jTextField5.setOpaque(false);
+        jTextField5.setPreferredSize(new java.awt.Dimension(5, 20));
+        jPanel2.add(jTextField5);
+        jTextField5.setBounds(180, 120, 210, 25);
+
+        jLabel21.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(33, 33, 33));
+        jLabel21.setText("Last Name");
+        jPanel2.add(jLabel21);
+        jLabel21.setBounds(60, 120, 110, 20);
 
         main_panel.add(jPanel2);
         jPanel2.setBounds(0, 150, 860, 510);
@@ -681,6 +691,7 @@ public class AddAppointment extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -698,6 +709,7 @@ public class AddAppointment extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
     private javax.swing.JTextPane jTextPane1;
     private javax.swing.JLabel lbl_AddMem;
     private javax.swing.JPanel main_panel;
