@@ -4,7 +4,7 @@
  */
 package Nim;
 
-import Soi.AddAppointment;
+import Soi.*;
 import javax.swing.JLabel;
 
 /**
@@ -21,7 +21,7 @@ public class AddEmployee extends javax.swing.JFrame {
     }
 
     
-    /*------------------ballaa-------------------------*/
+  
     
     JLabel lab1 = new JLabel("User Name");
   
@@ -57,10 +57,35 @@ public class AddEmployee extends javax.swing.JFrame {
         amount1 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jTextField5 = new javax.swing.JTextField();
+        jLabel20 = new javax.swing.JLabel();
+        jTextField6 = new javax.swing.JTextField();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jTextField8 = new javax.swing.JTextField();
+        jLabel28 = new javax.swing.JLabel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        jLabel22 = new javax.swing.JLabel();
+        jTextField4 = new javax.swing.JTextField();
+        jLabel23 = new javax.swing.JLabel();
+        jTextField7 = new javax.swing.JTextField();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jButton7 = new javax.swing.JButton();
+        jTextField9 = new javax.swing.JTextField();
+        jLabel25 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -115,7 +140,7 @@ public class AddEmployee extends javax.swing.JFrame {
         jLabel6.setText("C");
         jLabel6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         top_panel.add(jLabel6);
-        jLabel6.setBounds(530, 20, 30, 22);
+        jLabel6.setBounds(530, 20, 30, 24);
 
         jPanel10.setBackground(new java.awt.Color(12, 173, 183));
         jPanel10.setPreferredSize(new java.awt.Dimension(190, 3));
@@ -140,7 +165,7 @@ public class AddEmployee extends javax.swing.JFrame {
         jLabel7.setText("X");
         jLabel7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         top_panel.add(jLabel7);
-        jLabel7.setBounds(450, 20, 30, 22);
+        jLabel7.setBounds(450, 20, 30, 24);
 
         jLabel8.setFont(new java.awt.Font("SFNS Display", 0, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(153, 153, 153));
@@ -148,20 +173,25 @@ public class AddEmployee extends javax.swing.JFrame {
         jLabel8.setText("O");
         jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         top_panel.add(jLabel8);
-        jLabel8.setBounds(490, 20, 30, 22);
+        jLabel8.setBounds(490, 20, 30, 24);
 
         main_panel.add(top_panel);
         top_panel.setBounds(0, 0, 1080, 50);
 
         jPanel4.setBackground(new java.awt.Color(67, 70, 75));
 
-        jLabel10.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Verdana", 0, 13)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Bridal Packages");
+        jLabel10.setText("Check Availability");
         jLabel10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel10MouseClicked(evt);
+            }
+        });
 
         jPanel11.setBackground(new java.awt.Color(12, 173, 183));
-        jPanel11.setPreferredSize(new java.awt.Dimension(190, 3));
+        jPanel11.setPreferredSize(new java.awt.Dimension(170, 7));
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -171,22 +201,32 @@ public class AddEmployee extends javax.swing.JFrame {
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 3, Short.MAX_VALUE)
+            .addGap(0, 7, Short.MAX_VALUE)
         );
 
-        jLabel11.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Verdana", 0, 13)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("Bridal Packages");
+        jLabel11.setText("Add Employee");
         jLabel11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+        });
 
-        jLabel12.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Verdana", 0, 13)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setText("Bridal Packages");
+        jLabel12.setText("Update/Delete Employee");
         jLabel12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel12MouseClicked(evt);
+            }
+        });
 
-        jLabel13.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Verdana", 0, 13)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("Bridal Packages");
+        jLabel13.setText("Packages");
         jLabel13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -194,31 +234,34 @@ public class AddEmployee extends javax.swing.JFrame {
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(40, 40, 40)
+                .addGap(53, 53, 53)
                 .addComponent(jLabel11)
-                .addGap(111, 111, 111)
+                .addGap(126, 126, 126)
                 .addComponent(jLabel12)
-                .addGap(130, 130, 130)
+                .addGap(90, 90, 90)
                 .addComponent(jLabel10)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 145, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
                 .addComponent(jLabel13)
-                .addGap(38, 38, 38))
+                .addGap(60, 60, 60))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(70, 70, 70)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel11)
-                        .addComponent(jLabel12)
-                        .addComponent(jLabel10))
-                    .addComponent(jLabel13))
-                .addGap(11, 11, 11)
-                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jLabel13)
+                .addGap(21, 21, 21))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel11)
+                    .addComponent(jLabel12)
+                    .addComponent(jLabel10))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(5, 5, 5))
         );
 
         main_panel.add(jPanel4);
@@ -359,34 +402,191 @@ public class AddEmployee extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(null);
 
-        jTextField1.setMinimumSize(new java.awt.Dimension(5, 20));
-        jTextField1.setOpaque(false);
-        jTextField1.setPreferredSize(new java.awt.Dimension(5, 20));
-        jPanel2.add(jTextField1);
-        jTextField1.setBounds(270, 170, 168, 23);
-
-        jButton3.setText("Update");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jButton3);
-        jButton3.setBounds(430, 230, 70, 25);
-
-        jButton4.setBackground(new java.awt.Color(24, 185, 175));
-        jButton4.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Search");
-        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(jButton4);
-        jButton4.setBounds(437, 170, 80, 23);
-
         jLabel14.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(33, 33, 33));
-        jLabel14.setText("Register Customer");
+        jLabel14.setText("Last name");
         jPanel2.add(jLabel14);
-        jLabel14.setBounds(300, 230, 120, 20);
+        jLabel14.setBounds(50, 120, 110, 20);
+
+        jTextField3.setMinimumSize(new java.awt.Dimension(5, 20));
+        jTextField3.setOpaque(false);
+        jTextField3.setPreferredSize(new java.awt.Dimension(5, 20));
+        jPanel2.add(jTextField3);
+        jTextField3.setBounds(170, 240, 168, 25);
+
+        jLabel15.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(33, 33, 33));
+        jLabel15.setText("Email ");
+        jPanel2.add(jLabel15);
+        jLabel15.setBounds(50, 240, 110, 20);
+
+        jLabel17.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(33, 33, 33));
+        jLabel17.setText("Gender");
+        jPanel2.add(jLabel17);
+        jLabel17.setBounds(50, 280, 110, 20);
+
+        jButton6.setBackground(new java.awt.Color(12, 173, 183));
+        jButton6.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(255, 255, 255));
+        jButton6.setText("+");
+        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton6);
+        jButton6.setBounds(170, 420, 50, 40);
+
+        jLabel18.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(33, 33, 33));
+        jLabel18.setText("Date of Birth");
+        jPanel2.add(jLabel18);
+        jLabel18.setBounds(50, 320, 110, 20);
+
+        jLabel21.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(33, 33, 33));
+        jLabel21.setText("Phone");
+        jPanel2.add(jLabel21);
+        jLabel21.setBounds(50, 200, 110, 20);
+
+        jTextField5.setMinimumSize(new java.awt.Dimension(5, 20));
+        jTextField5.setOpaque(false);
+        jTextField5.setPreferredSize(new java.awt.Dimension(5, 20));
+        jPanel2.add(jTextField5);
+        jTextField5.setBounds(170, 200, 168, 25);
+
+        jLabel20.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(33, 33, 33));
+        jLabel20.setText("Address");
+        jPanel2.add(jLabel20);
+        jLabel20.setBounds(50, 160, 110, 20);
+
+        jTextField6.setMinimumSize(new java.awt.Dimension(5, 20));
+        jTextField6.setOpaque(false);
+        jTextField6.setPreferredSize(new java.awt.Dimension(5, 20));
+        jPanel2.add(jTextField6);
+        jTextField6.setBounds(170, 160, 168, 25);
+
+        jLabel26.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel26.setForeground(new java.awt.Color(33, 33, 33));
+        jLabel26.setText("auto generate");
+        jPanel2.add(jLabel26);
+        jLabel26.setBounds(170, 40, 110, 20);
+
+        jLabel27.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel27.setForeground(new java.awt.Color(33, 33, 33));
+        jLabel27.setText("First Name");
+        jPanel2.add(jLabel27);
+        jLabel27.setBounds(50, 80, 110, 20);
+
+        jTextField8.setMinimumSize(new java.awt.Dimension(5, 20));
+        jTextField8.setOpaque(false);
+        jTextField8.setPreferredSize(new java.awt.Dimension(5, 20));
+        jPanel2.add(jTextField8);
+        jTextField8.setBounds(170, 80, 168, 25);
+
+        jLabel28.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel28.setForeground(new java.awt.Color(33, 33, 33));
+        jLabel28.setText("ID");
+        jPanel2.add(jLabel28);
+        jLabel28.setBounds(50, 40, 110, 20);
+
+        jRadioButton1.setFont(new java.awt.Font("Nirmala UI", 0, 12)); // NOI18N
+        jRadioButton1.setText("Male");
+        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jRadioButton1);
+        jRadioButton1.setBounds(250, 280, 93, 23);
+
+        jRadioButton2.setFont(new java.awt.Font("Nirmala UI", 0, 12)); // NOI18N
+        jRadioButton2.setText("Female");
+        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton2ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jRadioButton2);
+        jRadioButton2.setBounds(170, 280, 63, 25);
+
+        jDateChooser1.setDateFormatString("yyyy-M-d ");
+        jDateChooser1.setFont(new java.awt.Font("Nirmala UI", 0, 11)); // NOI18N
+        jPanel2.add(jDateChooser1);
+        jDateChooser1.setBounds(170, 320, 91, 20);
+
+        jLabel22.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(33, 33, 33));
+        jLabel22.setText("Username");
+        jPanel2.add(jLabel22);
+        jLabel22.setBounds(490, 170, 110, 20);
+
+        jTextField4.setMinimumSize(new java.awt.Dimension(5, 20));
+        jTextField4.setOpaque(false);
+        jTextField4.setPreferredSize(new java.awt.Dimension(5, 20));
+        jPanel2.add(jTextField4);
+        jTextField4.setBounds(610, 210, 168, 25);
+
+        jLabel23.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel23.setForeground(new java.awt.Color(33, 33, 33));
+        jLabel23.setText("Password ");
+        jPanel2.add(jLabel23);
+        jLabel23.setBounds(490, 210, 110, 20);
+
+        jTextField7.setMinimumSize(new java.awt.Dimension(5, 20));
+        jTextField7.setOpaque(false);
+        jTextField7.setPreferredSize(new java.awt.Dimension(5, 20));
+        jPanel2.add(jTextField7);
+        jTextField7.setBounds(610, 170, 168, 25);
+
+        jLabel29.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel29.setForeground(new java.awt.Color(33, 33, 33));
+        jLabel29.setText("Specialized Areas");
+        jPanel2.add(jLabel29);
+        jLabel29.setBounds(50, 420, 110, 20);
+
+        jLabel24.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel24.setForeground(new java.awt.Color(33, 33, 33));
+        jLabel24.setText("Notes");
+        jPanel2.add(jLabel24);
+        jLabel24.setBounds(490, 40, 110, 20);
+
+        jTextField2.setMinimumSize(new java.awt.Dimension(5, 20));
+        jTextField2.setOpaque(false);
+        jTextField2.setPreferredSize(new java.awt.Dimension(5, 20));
+        jPanel2.add(jTextField2);
+        jTextField2.setBounds(170, 120, 168, 25);
+
+        jTextArea1.setColumns(10);
+        jTextArea1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
+        jTextArea1.setRows(5);
+        jScrollPane2.setViewportView(jTextArea1);
+
+        jPanel2.add(jScrollPane2);
+        jScrollPane2.setBounds(610, 40, 190, 110);
+
+        jButton7.setBackground(new java.awt.Color(12, 173, 183));
+        jButton7.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(255, 255, 255));
+        jButton7.setText("Add Employee");
+        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(jButton7);
+        jButton7.setBounds(530, 440, 210, 40);
+
+        jTextField9.setMinimumSize(new java.awt.Dimension(5, 20));
+        jTextField9.setOpaque(false);
+        jTextField9.setPreferredSize(new java.awt.Dimension(5, 20));
+        jPanel2.add(jTextField9);
+        jTextField9.setBounds(170, 360, 168, 25);
+
+        jLabel25.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel25.setForeground(new java.awt.Color(33, 33, 33));
+        jLabel25.setText("Post");
+        jPanel2.add(jLabel25);
+        jLabel25.setBounds(50, 360, 110, 20);
 
         main_panel.add(jPanel2);
         jPanel2.setBounds(0, 150, 860, 510);
@@ -458,10 +658,35 @@ public class AddEmployee extends javax.swing.JFrame {
         
     }//GEN-LAST:event_formWindowOpened
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
         
+        
+    }//GEN-LAST:event_jLabel11MouseClicked
 
-    }//GEN-LAST:event_jButton3ActionPerformed
+    private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
+
+        new CheckAttendance().setVisible(true);
+        
+    }//GEN-LAST:event_jLabel10MouseClicked
+
+    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton1ActionPerformed
+
+    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton2ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
+        
+        UpdateDeleteEmployee ude = new UpdateDeleteEmployee();
+        ude.setVisible(true);
+        
+    }//GEN-LAST:event_jLabel12MouseClicked
 
     /**
      * @param args the command line arguments
@@ -480,14 +705,74 @@ public class AddEmployee extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AddAppointment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AddEmployee.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AddAppointment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AddEmployee.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AddAppointment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AddEmployee.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AddAppointment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AddEmployee.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -496,7 +781,7 @@ public class AddEmployee extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new AddAppointment().setVisible(true);
+                new AddEmployee().setVisible(true);
             }
         });
     }
@@ -506,14 +791,28 @@ public class AddEmployee extends javax.swing.JFrame {
     private javax.swing.JLabel amount3;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -523,7 +822,18 @@ public class AddEmployee extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel8;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField9;
     private javax.swing.JPanel main_panel;
     private javax.swing.JLabel msg_datetime;
     private javax.swing.JLabel msg_description;
