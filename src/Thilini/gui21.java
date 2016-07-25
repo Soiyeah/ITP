@@ -4,7 +4,7 @@
  */
 package Thilini;
 
-import Soi.gui2;
+
 import javax.swing.JLabel;
 
 /**
@@ -494,7 +494,7 @@ public class gui21 extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new gui2().setVisible(true);
+                new gui21().setVisible(true);
             }
         });
     }
