@@ -64,7 +64,7 @@ public class Login extends javax.swing.JFrame {
         jPanel1.add(jLabel4);
         jLabel4.setBounds(230, 330, 120, 15);
 
-        jTextField1.setBackground(new java.awt.Color(105, 42, 95));
+        jTextField1.setBackground(new java.awt.Color(7, 102, 130));
         jTextField1.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(255, 255, 255));
         jTextField1.setBorder(null);
@@ -72,7 +72,7 @@ public class Login extends javax.swing.JFrame {
         jPanel1.add(jTextField1);
         jTextField1.setBounds(340, 190, 180, 23);
 
-        jPasswordField1.setBackground(new java.awt.Color(105, 42, 95));
+        jPasswordField1.setBackground(new java.awt.Color(7, 102, 130));
         jPasswordField1.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
         jPasswordField1.setForeground(new java.awt.Color(255, 255, 255));
         jPasswordField1.setBorder(null);
@@ -80,7 +80,7 @@ public class Login extends javax.swing.JFrame {
         jPanel1.add(jPasswordField1);
         jPasswordField1.setBounds(340, 230, 180, 23);
 
-        jButton2.setBackground(new java.awt.Color(102, 40, 92));
+        jButton2.setBackground(new java.awt.Color(7, 102, 130));
         jButton2.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Cancel");
@@ -94,7 +94,7 @@ public class Login extends javax.swing.JFrame {
         jPanel1.add(jButton2);
         jButton2.setBounds(340, 270, 80, 30);
 
-        jButton1.setBackground(new java.awt.Color(102, 40, 92));
+        jButton1.setBackground(new java.awt.Color(7, 102, 130));
         jButton1.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Login");
@@ -111,7 +111,7 @@ public class Login extends javax.swing.JFrame {
         jPanel1.add(jTextField2);
         jTextField2.setBounds(340, 190, 180, 23);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Login.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/LoginB.jpg"))); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 800, 450);
 
