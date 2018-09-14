@@ -20,7 +20,7 @@ public class Login extends javax.swing.JFrame {
     }
 
     
-    /*------------------ballaa-------------------------*/
+
     
     JLabel lab1 = new JLabel("User Name");
   
