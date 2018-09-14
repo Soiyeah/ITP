@@ -20,8 +20,6 @@ public class Availability extends javax.swing.JFrame {
     }
 
     
-    /*------------------ballaa-------------------------*/
-    
     JLabel lab1 = new JLabel("User Name");
   
     @SuppressWarnings("unchecked")
